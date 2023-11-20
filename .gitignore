@@ -1,5 +1,8 @@
-build/
+build/browser/*
+!build/browser/index.html
 node_modules/
 target/
 .shadow-cljs/
 .nrepl-port
+.clj-kondo
+.lsp
