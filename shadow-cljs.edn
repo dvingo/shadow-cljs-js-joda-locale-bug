@@ -1,0 +1,7 @@
+{:source-paths ["src"]
+ :dev-http {5000 "build/browser"}
+ :builds
+ {:browser {:target :browser
+            :output-dir "build/browser"
+            :asset-path "."
+            :modules {:browser-main {:init-fn browser.main/init}}}}}

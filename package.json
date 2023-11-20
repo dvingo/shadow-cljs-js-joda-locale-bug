@@ -1,0 +1,20 @@
+{
+  "name": "js-joda-cljs-app",
+  "version": "0.0.1",
+  "description": "ClojureScript project setup with Shadow-CLJS",
+  "scripts": {
+    "release": "shadow-cljs release browser",
+    "watch": "shadow-cljs watch browser",
+    "start": "serve -s build/browser"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "shadow-cljs": "2.26.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@js-joda/core": "5.6.1",
+    "@js-joda/locale_en-us": "4.8.11",
+    "@js-joda/timezone": "2.18.2"
+  }
+}
