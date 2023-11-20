@@ -1,3 +1,9 @@
+Reproduction of an issue attempting to loading @js-joda/locale using shadow-cljs
+
+Instructions for installing js-joda with locales can be found here
+
+https://github.com/js-joda/js-joda/blob/main/packages/locale/README.md#node-with-prebuilt-locales
+
 # Run the shadow-version
 
 ```bash
