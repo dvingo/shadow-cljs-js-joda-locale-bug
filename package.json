@@ -5,10 +5,16 @@
   "scripts": {
     "release": "shadow-cljs release browser",
     "watch": "shadow-cljs watch browser",
-    "start": "serve -s build/browser"
+    "start": "serve -s build/browser",
+    "js": "rollup -c"
   },
   "keywords": [],
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^3.29.4",
+    "rollup-plugin-visualizer": "^5.9.2",
     "shadow-cljs": "2.26.0"
   },
   "license": "MIT",

@@ -1,3 +1,18 @@
+
+Updated to use global resolve for jsjoda locale
+
+To see the working cljs app:
+
+```bash
+npm i
+npm run js
+npm run watch
+```
+
+--------
+prior notes:
+
+
 Reproduction of an issue attempting to loading @js-joda/locale using shadow-cljs
 
 Instructions for installing js-joda with locales can be found here
