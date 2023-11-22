@@ -3,7 +3,7 @@
    ["@js-joda/core" :refer [ZonedDateTime] :as js-joda]
    ["@js-joda/timezone/dist/js-joda-timezone-10-year-range"]
    ["@js-joda/locale_en-us" :as locale]
-   ["@tanstack/react-query" :as rc :refer[QueryClient]]))
+   ["@tanstack/react-query" :as rc :refer [QueryClient]]))
 
 ;; (js/console.log " joda locale: " Locale)
 (def us-locale (. locale/Locale -US))
