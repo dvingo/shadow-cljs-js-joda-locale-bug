@@ -8,6 +8,7 @@
     "start": "serve -s build/browser",
     "js": "rollup -c",
     "es": "esbuild build/browser/js-external.js --bundle --format=cjs --outfile=build/browser/js/js-deps.js",
+    "es-prod": "esbuild build/browser/js-external.js --minify --bundle --format=cjs --outfile=build/browser/js/js-deps.js",
     "es_old": "esbuild src/browser/js-deps.js --bundle --format=esm --outfile=build/browser/js/js-deps.js"
   },
   "keywords": [],
