@@ -4,5 +4,7 @@ import * as JodaLocale from '@js-joda/locale_en-us'
 
 export {
     JodaCore,
-    JodaLocale
+    JodaLocale,
+    JodaCore as '@js-joda/core',
+    JodaLocale as '@js-joda/locale_en-us'
 }

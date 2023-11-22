@@ -1,12 +1,13 @@
 {:source-paths ["src"]
  :dev-http {5000 "build/browser"}
  :builds
- {:browser {:target :browser
+ {:browser {:target :esm
             :output-dir "build/browser"
             :asset-path "."
             :js-options
-            {:resolve {"@js-joda/locale_en-us" {:target :global
-                                                :global "joda_output.JodaLocale"}
-                       "@js-joda/core" {:target :global
-                                        :global "joda_output.JodaCore"}}}
+            {
+            ;;  :js-provider :import
+             :js-provider :external
+             :external-index "build/browser/js-external.js"
+             :external-index-format :esm}
             :modules {:browser-main {:init-fn browser.main/init}}}}}

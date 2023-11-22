@@ -6,15 +6,13 @@
     "release": "shadow-cljs release browser",
     "watch": "shadow-cljs watch browser",
     "start": "serve -s build/browser",
-    "js": "rollup -c"
+    "js": "rollup -c",
+    "es": "esbuild build/browser/js-external.js --bundle --format=esm --target=es2020,chrome58,edge16,firefox57,safari11 --outfile=build/browser/js/js-deps.js",
+    "es_old": "esbuild src/browser/js-deps.js --bundle --format=esm --outfile=build/browser/js/js-deps.js"
   },
   "keywords": [],
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^3.29.4",
-    "rollup-plugin-visualizer": "^5.9.2",
+    "esbuild": "0.19.7",
     "shadow-cljs": "2.26.0"
   },
   "license": "MIT",

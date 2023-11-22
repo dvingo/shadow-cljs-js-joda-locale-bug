@@ -1,17 +1,15 @@
-
-Updated to use global resolve for jsjoda locale
+Updated to use external JS bundle with esbuild
 
 To see the working cljs app:
 
 ```bash
 npm i
-npm run js
 npm run watch
+npm run es
 ```
 
 --------
 prior notes:
-
 
 Reproduction of an issue attempting to loading @js-joda/locale using shadow-cljs
 
