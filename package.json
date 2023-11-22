@@ -7,7 +7,7 @@
     "watch": "shadow-cljs watch browser",
     "start": "serve -s build/browser",
     "js": "rollup -c",
-    "es": "esbuild build/browser/js-external.js --bundle --format=esm --target=es2020,chrome58,edge16,firefox57,safari11 --outfile=build/browser/js/js-deps.js",
+    "es": "esbuild build/browser/js-external.js --bundle --format=cjs --outfile=build/browser/js/js-deps.js",
     "es_old": "esbuild src/browser/js-deps.js --bundle --format=esm --outfile=build/browser/js/js-deps.js"
   },
   "keywords": [],

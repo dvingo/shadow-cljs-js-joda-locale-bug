@@ -1,7 +1,7 @@
 {:source-paths ["src"]
  :dev-http {5000 "build/browser"}
  :builds
- {:browser {:target     :esm
+ {:browser {:target     :browser
             :output-dir "build/browser"
             :asset-path "."
             :js-options {:js-provider           :external
