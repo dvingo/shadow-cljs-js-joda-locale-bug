@@ -19,6 +19,7 @@
   "dependencies": {
     "@js-joda/core": "5.6.1",
     "@js-joda/locale_en-us": "4.8.11",
-    "@js-joda/timezone": "2.18.2"
+    "@js-joda/timezone": "2.18.2",
+    "@tanstack/react-query": "^5.8.4"
   }
 }
